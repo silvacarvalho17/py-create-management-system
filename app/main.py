@@ -46,7 +46,8 @@ def write_students_information(students: list[Student]) -> int:
     return len(students)
 
 
-def read_groups_information() -> listspecialty_names = []
+def read_groups_information() -> list:
+    specialty_names = []
 
     with open("groups.pickle", "rb") as file:
         while True:
@@ -62,7 +63,8 @@ def read_groups_information() -> listspecialty_names = []
     return specialty_names
 
 
-def read_students_information() -> liststudents = []
+def read_students_information() -> list:
+    students = []
 
     with open("students.pickle", "rb") as file:
         while True:
